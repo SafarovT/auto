@@ -1,0 +1,4 @@
+﻿  MooreMinimization.cpp
+D:\study\auto\lw1\MooreMinimization\MooreMinimization.cpp(49,59): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+D:\study\auto\lw1\MooreMinimization\MooreMinimization.cpp(113,39): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  MooreMinimization.vcxproj -> D:\study\auto\lw1\x64\Debug\MooreMinimization.exe

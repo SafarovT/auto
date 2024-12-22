@@ -1,0 +1,28 @@
+Mealy
+States: Q0 Q1 Q2
+InputSymbols: a b
+OutputSymbols: x y
+StartState: Q0
+Transitions:
+Q0 a Q1 x
+Q0 b Q2 y
+Q1 a Q0 x
+Q1 b Q2 y
+Q2 a Q2 x
+Q2 b Q1 y
+
+Moore
+States: Q0 Q1 Q2
+InputSymbols: a b
+StateOutputs:
+Q0 x
+Q1 y
+Q2 x
+StartState: Q0
+Transitions:
+Q0 a Q1
+Q0 b Q2
+Q1 a Q0
+Q1 b Q2
+Q2 a Q2
+Q2 b Q1

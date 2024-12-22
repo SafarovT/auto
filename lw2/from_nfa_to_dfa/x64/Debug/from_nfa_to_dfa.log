@@ -1,0 +1,35 @@
+﻿  from_nfa_to_dfa.cpp
+C:\study\auto\lw2\from_nfa_to_dfa\from_nfa_to_dfa.cpp(60,43): warning C4267: аргумент: преобразование из "size_t" в "const int"; возможна потеря данных
+C:\study\auto\lw2\from_nfa_to_dfa\from_nfa_to_dfa.cpp(75,43): warning C4267: аргумент: преобразование из "size_t" в "const int"; возможна потеря данных
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\optional(83): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\study\auto\lw2\from_nfa_to_dfa\from_nfa_to_dfa.cpp(423,1): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::_Optional_destruct_base<_Ty,true>::_Optional_destruct_base<unsigned __int64>(std::in_place_t,unsigned __int64 &&) noexcept"
+          with
+          [
+              _Ty=int
+          ]
+C:\study\auto\lw2\from_nfa_to_dfa\from_nfa_to_dfa.cpp(423,1): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::_Optional_destruct_base<_Ty,true>::_Optional_destruct_base<unsigned __int64>(std::in_place_t,unsigned __int64 &&) noexcept"
+          with
+          [
+              _Ty=int
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\optional(247): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::_Optional_construct_base<_Ty>::_Optional_construct_base<unsigned __int64>(std::in_place_t,unsigned __int64 &&)"
+          with
+          [
+              _Ty=int
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\optional(247,18): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::_Optional_construct_base<_Ty>::_Optional_construct_base<unsigned __int64>(std::in_place_t,unsigned __int64 &&)"
+          with
+          [
+              _Ty=int
+          ]
+C:\study\auto\lw2\from_nfa_to_dfa\from_nfa_to_dfa.cpp(63,13): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::optional<int>::optional<size_t,0>(_Ty2 &&) noexcept"
+          with
+          [
+              _Ty2=size_t
+          ]
+C:\study\auto\lw2\from_nfa_to_dfa\from_nfa_to_dfa.cpp(63,13): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::optional<int>::optional<size_t,0>(_Ty2 &&) noexcept"
+          with
+          [
+              _Ty2=size_t
+          ]
+  from_nfa_to_dfa.vcxproj -> C:\study\auto\lw2\x64\Debug\from_nfa_to_dfa.exe

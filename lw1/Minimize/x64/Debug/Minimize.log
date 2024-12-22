@@ -1,0 +1,8 @@
+﻿  Machine.cpp
+C:\study\auto\lw1\Minimize\Machine.cpp(51,68): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\study\auto\lw1\Minimize\Machine.cpp(143,48): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\study\auto\lw1\Minimize\Machine.cpp(273,68): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\study\auto\lw1\Minimize\Machine.cpp(364,48): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  main.cpp
+  Создание кода...
+  Minimize.vcxproj -> C:\study\auto\lw1\x64\Debug\Minimize.exe
