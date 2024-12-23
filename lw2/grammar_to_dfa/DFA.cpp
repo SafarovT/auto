@@ -137,19 +137,15 @@ namespace
     {
         NFAInfo nfaInfo;
 
-        // Получаем переходы из грамматики
         auto grammarTransitions = grammar.GetTransitions();
 
-        // Инициализируем начальное состояние (обычно это первая нетерминальная переменная)
         if (grammarTransitions.empty())
         {
             throw invalid_argument("Грамматика не содержит переходов.");
         }
 
-        // Обновляем количество состояний в NFA
         nfaInfo.totalStates = grammarTransitions.size() + 1;
 
-        // Инициализируем алфавит NFA
         for (const auto& [nonTerminal, transitions] : grammarTransitions)
         {
             for (const auto& [symbol, _] : transitions)
@@ -161,9 +157,12 @@ namespace
             }
         }
 
-        // Обрабатываем переходы грамматики и формируем таблицу переходов NFA
         for (const auto& [nonTerminal, transitions] : grammarTransitions)
         {
+            if (nfaInfo.transitions.find(nonTerminal) == nfaInfo.transitions.end())
+            {
+                nfaInfo.transitions[nonTerminal] = {};
+            }
             char fromState = nonTerminal;
 
             for (const auto& [symbol, nextNonTerminal] : transitions)
@@ -180,7 +179,6 @@ namespace
             }
         }
 
-        // Устанавливаем начальное состояние (первый нетерминал в грамматике)
         nfaInfo.initState = NEW_STATE;
         nfaInfo.finalStates.push_back(grammar.GetTransitions()[0].first);
 
@@ -193,10 +191,8 @@ namespace
     {
         NFAInfo nfaInfo;
 
-        // Получаем переходы из грамматики
         auto grammarTransitions = grammar.GetTransitions();
 
-        // Инициализируем начальное состояние (обычно это первая нетерминальная переменная)
         if (grammarTransitions.empty())
         {
             throw invalid_argument("Грамматика не содержит переходов.");
@@ -205,10 +201,8 @@ namespace
         char finalState = Grammar::FINAL_SYMBOL;
         nfaInfo.finalStates.push_back(finalState);
 
-        // Обновляем количество состояний в NFA
         nfaInfo.totalStates = grammar.GetTransitions().size() + 1;
 
-        // Инициализируем алфавит NFA
         for (const auto& [nonTerminal, transitions] : grammarTransitions)
         {
             for (const auto& [symbol, _] : transitions)
@@ -220,9 +214,12 @@ namespace
             }
         }
 
-        // Обрабатываем переходы грамматики и формируем таблицу переходов NFA
         for (const auto& [nonTerminal, transitions] : grammarTransitions)
         {
+            if (nfaInfo.transitions.find(nonTerminal) == nfaInfo.transitions.end())
+            {
+                nfaInfo.transitions[nonTerminal] = {};
+            }
             char fromState = nonTerminal;
 
             for (const auto& [symbol, nextNonTerminal] : transitions)
@@ -239,11 +236,10 @@ namespace
             }
         }
 
-        // Устанавливаем начальное состояние (первый нетерминал в грамматике)
         nfaInfo.initState = grammarTransitions[0].first;
         nfaInfo.transitions[finalState] = {};
 
-        PrintNfaInfo(nfaInfo);
+        // PrintNfaInfo(nfaInfo);
 
         return nfaInfo;
     }
@@ -320,7 +316,6 @@ void DFA::Display(const string& fileName) const
         }
     }
 
-    // Определяем переходы
     for (const auto& [stateID, state] : m_data)
     {
         for (const char& symbol : m_alphabet)

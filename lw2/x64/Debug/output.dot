@@ -2,17 +2,12 @@ digraph DFA {
     rankdir=LR;
     node [shape = circle];
     A [shape=circle];
-    B [shape=circle];
-    C [shape=circle];
-    D [shape=circle];
-    E [shape=doublecircle];
+    B [shape=doublecircle];
+    C [shape=doublecircle];
+    D [shape=doublecircle];
     A -> B [label="0"];
-    A -> A [label="1"];
-    B -> C [label="0"];
-    C -> C [label="0"];
-    C -> D [label="1"];
-    C -> E [label="T"];
-    D -> D [label="0"];
-    D -> D [label="1"];
-    D -> E [label="T"];
+    A -> C [label="1"];
+    C -> D [label="0"];
+    C -> C [label="1"];
+    D -> C [label="1"];
 }

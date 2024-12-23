@@ -1,4 +1,4 @@
 ﻿  DFA.cpp
-C:\study\auto\lw2\grammar_to_dfa\DFA.cpp(150,60): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-C:\study\auto\lw2\grammar_to_dfa\DFA.cpp(209,66): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-  grammar_to_dfa.vcxproj -> C:\study\auto\lw2\x64\Debug\grammar_to_dfa.exe
+D:\study\auto\lw2\grammar_to_dfa\DFA.cpp(147,57): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+D:\study\auto\lw2\grammar_to_dfa\DFA.cpp(204,63): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  grammar_to_dfa.vcxproj -> D:\study\auto\lw2\x64\Debug\grammar_to_dfa.exe
