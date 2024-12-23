@@ -1,6 +1,4 @@
 ﻿  DFA.cpp
-  grammar_to_dfa.cpp
-  Создание кода...
-C:\study\auto\lw2\grammar_to_dfa\DFA.cpp(126): error C4716: DFA::FindState: должна возвращать значение
-C:\study\auto\lw2\grammar_to_dfa\DFA.cpp(121): error C4716: DFA::FindUnmarked: должна возвращать значение
-C:\study\auto\lw2\grammar_to_dfa\DFA.cpp(131): error C4716: DFA::GetDFAFinalStates: должна возвращать значение
+C:\study\auto\lw2\grammar_to_dfa\DFA.cpp(150,60): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\study\auto\lw2\grammar_to_dfa\DFA.cpp(209,66): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  grammar_to_dfa.vcxproj -> C:\study\auto\lw2\x64\Debug\grammar_to_dfa.exe

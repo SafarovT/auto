@@ -19,13 +19,13 @@ public:
 
 	DFA(const Grammar& grammar);
 
-	void Minimize() const;
+	void Minimize();
 	void Print(std::ostream& output) const;
 	void Display(const std::string& fileName) const;
 
 private:
 	DFAData m_data;
-	std::vector<char> m_alphabet;
+	std::vector<char> m_finalStates, m_alphabet;
 
 	std::optional<char> FindUnmarked() const;
 	std::optional<char> FindState(const std::vector<char>& state) const;

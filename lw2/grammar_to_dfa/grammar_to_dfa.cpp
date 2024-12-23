@@ -41,7 +41,6 @@ int main(int argc, char* argv[])
 	{
 		Args args = ParseArgs(argc, argv);
 		Grammar grammar(args.fileName, args.grammarSide);
-		grammar.Print("grammar_result.txt");
 		DFA dfa(grammar);
 		dfa.Minimize();
 		dfa.Print(cout);

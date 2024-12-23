@@ -1,6 +1,10 @@
-#include "Grammar.h"
+ï»¿#include "Grammar.h"
 #include <fstream>
 #include <sstream>
+
+#include <unordered_map>
+#include <iostream>
+#include <set>
 
 using namespace std;
 
@@ -49,7 +53,7 @@ Grammar::Grammar(const string& fileName, Side side)
 
             if (m_side == Side::Left)
             {
-                // Ëåâàÿ ãðàììàòèêà: S -> A0
+                // Ð›ÐµÐ²Ð°Ñ Ð³Ñ€Ð°Ð¼Ð¼Ð°Ñ‚Ð¸ÐºÐ°: S -> A0
                 if (production.size() == 1 && isalnum(production[0]))
                 {
                     transitions.emplace_back(production[0], FINAL_SYMBOL);
@@ -65,7 +69,7 @@ Grammar::Grammar(const string& fileName, Side side)
             }
             else
             {
-                // Ïðàâàÿ ãðàììàòèêà: S -> 0A
+                // ÐŸÑ€Ð°Ð²Ð°Ñ Ð³Ñ€Ð°Ð¼Ð¼Ð°Ñ‚Ð¸ÐºÐ°: S -> 0A
                 if (production.size() == 1 && isalnum(production[0]))
                 {
                     transitions.emplace_back(production[0], FINAL_SYMBOL);

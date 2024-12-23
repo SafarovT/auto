@@ -11,7 +11,7 @@ public:
 		Left,
 		Right,
 	};
-	static const char FINAL_SYMBOL = 'F';
+	static const char FINAL_SYMBOL = 'H';
 
 	using Transitions = std::pair<char, std::vector<std::pair<char, char>>>;
 
